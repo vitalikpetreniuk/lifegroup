@@ -860,6 +860,14 @@ jQuery(function ($) {
         }
     });
 
+        $(".smooth-scroll").click(function (e) {
+            e.preventDefault();
+            var elementClick = $(this).attr("href");
+            var destination = $(elementClick).offset().top;
+            $('html').animate({ scrollTop: destination }, 1100);
+            return false;
+        });
+
     $('.s-videos-list, .simple-oneslidecarousel').owlCarousel({
         items: 1,
         autoHeight: true,
