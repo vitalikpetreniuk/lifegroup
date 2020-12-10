@@ -10,75 +10,85 @@
   bottom: 31px;
   z-index: -1;
 }
+
 .page-top .page-topb {
   z-index: -1;
 }
+
 .crm-heading .apps_line {
   bottom: 29px;
 }
+
 .digital-heading .apps_line {
   bottom: 29px;
 }
+
 .executive-heading .apps_line {
   bottom: 30px;
 }
+
 .software-heading .apps_line {
   bottom: 30px;
 }
+
 .page-graphics .apps_line {
   bottom: 29px;
 }
+
 .voiceover-heading .apps_line {
   bottom: 36px;
 }
+
 .automation-heading .apps_line {
   bottom: 29px;
 }
+
 .webdesign-heading .apps_line {
   bottom: 30px;
 }
+
 .lifegrowth-heading .apps_line {
   bottom: 27px;
 }
+
 .video-heading .apps_line {
   bottom: 26px;
 }
+
 .enterpreneur-heading .apps_line {
   bottom: 28px;
 }
+
 .newsletters-heading .apps_line {
   bottom: 30px;
 }
+
 .hosting_heading .apps_line {
   bottom: 28px;
 }
+
 .page-topb {
   position: relative;
 }
+
 .apps-h {
   display: block;
   float: right;
 }
-/*.apps-h:after {
-  content: "";
-  width: 46px;
-  display: block;
-  height: 5px;
-  background-color: #414141;
-  position: relative;
-  bottom: 31px;
-  left: 55px;
-}*/
+
 .branding-heading .apps_line {
   bottom: 27px;
 }
-.drive-thru-header .apps_line  {
+
+.drive-thru-header .apps_line {
   height: 6px;
   bottom: 35px;
 }
+
 .page-topb img {
   float: right;
 }
+
 body.home {
   background: #000;
 
@@ -697,7 +707,7 @@ header {
 
       h1 {
         font-size: 44px;
-        margin-top: 45px;
+        margin-top: 75px;
         font-weight: 900;
 
         span.notblold {
@@ -737,7 +747,8 @@ header {
         display: block;
         width: 239px;
         height: 73px;
-        margin: 0 auto;
+        opacity: 0;
+        margin: 12px auto 0;
 
         &:hover {
           text-decoration: none;
@@ -973,7 +984,8 @@ header {
     h2 {
       margin-bottom: 33px;
     }
-    p+h2 {
+
+    p + h2 {
       margin-top: 30px;
       margin-bottom: 10px;
     }
@@ -1180,7 +1192,7 @@ header {
   .lion-title {
     text-transform: uppercase;
     padding-top: 18px;
-    background: url("../images/dest/2.about_page/mission_bg.png") center center no-repeat;
+    background: url("../images/dest/2.about_page/Mission_3.png") center center no-repeat;
     height: 211px;
 
 
@@ -1191,7 +1203,7 @@ header {
 
   p {
     margin-bottom: 0;
-    margin-top: -90px;
+    margin-top: -60px;
   }
 }
 
@@ -1199,6 +1211,7 @@ header {
   background: url('../images/dest/2.about_page/our-team_bg.png') center center no-repeat;
   background-size: cover;
   padding-bottom: 135px;
+  background-attachment: fixed;
 
   &-in {
     h2 {
@@ -1440,6 +1453,7 @@ header {
 .blur-bg {
   background: url("../images/dest/11.apps/bg1.png") center center no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   color: #fff;
   padding: 98px 0 120px;
   font-size: 1.18rem;
@@ -1527,9 +1541,8 @@ header {
 }
 
 .youtube-drivestudio {
-  background-blend-mode: color;
   padding: 1.875rem 0 2.3rem;
-  background: url('../images/dest/16.drive_thru/bg1.png') rgba(255, 255, 255, 0.83);
+  background: url('../images/dest/16.drive_thru/bg1.png');
   color: #000;
 
   &-in {
@@ -2161,6 +2174,18 @@ footer {
   }
 }
 
+@media (max-width: 1024px) {
+  .page-top {
+    .page-topt {
+      background-attachment: scroll;
+    }
+  }
+
+  .blur-bg, .team {
+    background-attachment: scroll;
+  }
+}
+
 @media (max-width: 992px) {
   .branding-heading .apps_line {
     bottom: 39px;
@@ -2234,6 +2259,7 @@ footer {
 
   .page-top .page-topb {
     z-index: -2;
+
     &.topb-image-text {
       p {
         left: 30px;
@@ -2361,10 +2387,6 @@ footer {
     }
   }
   .about-lion {
-    .lion-title {
-      display: none;
-    }
-
     img {
       margin-top: 0;
     }
@@ -2462,7 +2484,7 @@ footer {
     display: none;
   }
   .apps-h:after {
-    display: none!important;
+    display: none !important;
   }
   .lion-title {
     font-size: 28px;
@@ -2773,13 +2795,16 @@ footer {
         ul {
           display: flex;
           flex-wrap: wrap;
+
           li {
             flex-basis: 50%;
             padding: 0;
             text-align: center;
-            &+li {
+
+            & + li {
               border-left: 0;
             }
+
             &:nth-child(2n) {
               border-left: 1px solid #707070;
             }
