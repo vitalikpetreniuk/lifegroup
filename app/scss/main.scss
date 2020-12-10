@@ -1,7 +1,84 @@
 @import 'config';
 
 // CUSTOM USER STYLES & IMPORTS
-
+.apps_line {
+  position: absolute;
+  background-color: white;
+  height: 4px;
+  width: 100vw;
+  left: 0;
+  bottom: 31px;
+  z-index: -1;
+}
+.page-top .page-topb {
+  z-index: -1;
+}
+.crm-heading .apps_line {
+  bottom: 29px;
+}
+.digital-heading .apps_line {
+  bottom: 29px;
+}
+.executive-heading .apps_line {
+  bottom: 30px;
+}
+.software-heading .apps_line {
+  bottom: 30px;
+}
+.page-graphics .apps_line {
+  bottom: 29px;
+}
+.voiceover-heading .apps_line {
+  bottom: 36px;
+}
+.automation-heading .apps_line {
+  bottom: 29px;
+}
+.webdesign-heading .apps_line {
+  bottom: 30px;
+}
+.lifegrowth-heading .apps_line {
+  bottom: 27px;
+}
+.video-heading .apps_line {
+  bottom: 26px;
+}
+.enterpreneur-heading .apps_line {
+  bottom: 28px;
+}
+.newsletters-heading .apps_line {
+  bottom: 30px;
+}
+.hosting_heading .apps_line {
+  bottom: 28px;
+}
+.page-topb {
+  position: relative;
+}
+.apps-h {
+  display: block;
+  float: right;
+}
+/*.apps-h:after {
+  content: "";
+  width: 46px;
+  display: block;
+  height: 5px;
+  background-color: #414141;
+  position: relative;
+  bottom: 31px;
+  left: 55px;
+}*/
+.branding-heading .apps_line {
+  bottom: 27px;
+}
+.drive-thru-header .apps_line  {
+  height: 6px;
+  bottom: 35px;
+}
+.page-topb img {
+  float: right;
+}
 body.home {
   background: #000;
 
@@ -844,8 +921,8 @@ header {
 
       p {
         position: absolute;
-        left: 60px;
-        top: 20px;
+        left: 270px;
+        top: 40px;
       }
     }
   }
@@ -2085,6 +2162,9 @@ footer {
 }
 
 @media (max-width: 992px) {
+  .branding-heading .apps_line {
+    bottom: 39px;
+  }
   .half-img-text {
     justify-content: center;
 
@@ -2153,6 +2233,7 @@ footer {
   }
 
   .page-top .page-topb {
+    z-index: -2;
     &.topb-image-text {
       p {
         left: 30px;
@@ -2194,6 +2275,57 @@ footer {
 }
 
 @media (max-width: 768px) {
+  .apps_line {
+    bottom: 9px;
+  }
+  .drive-thru-header .apps_line {
+    bottom: 19px;
+  }
+  .executive-heading .apps_line {
+    bottom: 11px;
+  }
+  .digital-heading .apps_line {
+    bottom: 15px;
+  }
+  .video-heading .apps_line {
+    bottom: 14px;
+  }
+  .webdesign-heading .apps_line {
+    bottom: 17px;
+  }
+  .voiceover-heading .apps_line {
+    bottom: 31px;
+  }
+  .software-heading .apps_line {
+    bottom: 9px;
+  }
+  .newsletters-heading .apps_line {
+    bottom: 15px;
+  }
+  .hosting_heading .apps_line {
+    bottom: 14px;
+  }
+  .page-graphics .apps_line {
+    bottom: 18px;
+  }
+  .enterpreneur-heading .apps_line {
+    bottom: 4px;
+  }
+  .lifegrowth-heading .apps_line {
+    bottom: 17px;
+  }
+  .apps-h:after {
+    bottom: 2px;
+  }
+  .automation-heading .apps_line {
+    bottom: 15px;
+  }
+  .branding-heading .apps_line {
+    bottom: 42px;
+  }
+  .crm-heading .apps_line {
+    bottom: 17px;
+  }
   .lion-title {
     font-size: 35px;
   }
@@ -2326,6 +2458,12 @@ footer {
 }
 
 @media (max-width: 576px) {
+  .apps_line {
+    display: none;
+  }
+  .apps-h:after {
+    display: none!important;
+  }
   .lion-title {
     font-size: 28px;
   }
