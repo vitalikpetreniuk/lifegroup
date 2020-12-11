@@ -863,7 +863,7 @@ jQuery(function ($) {
         $(".smooth-scroll").click(function (e) {
             e.preventDefault();
             var elementClick = $(this).attr("href");
-            var destination = $(elementClick).offset().top;
+            var destination = $(elementClick).offset().top - 100;
             $('html').animate({ scrollTop: destination }, 1100);
             return false;
         });
