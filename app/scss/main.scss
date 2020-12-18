@@ -1435,6 +1435,7 @@ header {
 
 .video-group {
   background: url("../images/dest/9.videos/bg3.png") center center no-repeat;
+  background-attachment: fixed;
   background-size: cover;
   padding: 25px 0;
   color: #fff;
@@ -2186,8 +2187,7 @@ footer {
       background-attachment: scroll;
     }
   }
-
-  .blur-bg, .team {
+  .blur-bg, .team, .video-group {
     background-attachment: scroll;
   }
 }
