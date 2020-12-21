@@ -2076,15 +2076,15 @@ footer {
   .block-items {
     &-in {
       &.items-5 {
-        div:nth-child(2) {
+        a:nth-child(2) {
           transform: none;
         }
 
-        div:nth-child(n+3) {
+        a:nth-child(n+3) {
           margin-top: 30px;
         }
 
-        div:last-child {
+        a:last-child {
           margin-left: 50%;
           transform: translateX(-50%);
           justify-content: center;
@@ -2409,7 +2409,7 @@ footer {
 
   .block-items {
     &-in {
-      div {
+      a {
         width: calc(50% - 8px);
         font-size: 22px;
         min-height: 150px;
@@ -2663,7 +2663,7 @@ footer {
   }
   .block-items {
     &-in {
-      div {
+      a {
         font-size: 18px;
         min-height: 130px;
         max-height: 130px;
